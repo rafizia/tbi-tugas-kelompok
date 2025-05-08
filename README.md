@@ -25,6 +25,14 @@ A semantic search engine with LLM integration using Elasticsearch and Hugging Fa
    echo "HF_MODEL=mistralai/Mistral-7B-Instruct-v0.3" >> .env
    ```
 
+   and also add your elasticsearch server url, index batch size, max passages, and index name
+   ```
+    ELASTICSEARCH_HOST=http://192.168.100.225:9200
+    MAX_PASSAGES=500000
+    BATCH_SIZE=1000
+    INDEX_NAME=msmarco_passages-v2
+    ```
+
 3. Build and run the application: <br>
     elasticsearch is on my private server, so I can't deploy it here.
     but you can run it locally or on your own elasticsearch server
@@ -35,7 +43,7 @@ A semantic search engine with LLM integration using Elasticsearch and Hugging Fa
     after you indexed the data!
 
     rencana make docker soon, untuk deployment full
-    
+
 4. Access the application at http://localhost:8001
 
 ### Indexing Data
