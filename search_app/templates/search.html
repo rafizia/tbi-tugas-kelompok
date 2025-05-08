@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col items-center p-8">
+  <div class="w-full max-w-3xl">
+    <h1 class="text-3xl font-bold text-center mb-8">[Nama Search Engine]</h1>
+    
+    <form id="searchForm" class="flex gap-2 mb-6">
+      <input
+        type="text"
+        id="queryInput"
+        name="query"
+        placeholder="Search here ..."
+        class="flex-1 p-3 rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring focus:ring-blue-300"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow transition"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+      </svg>
+      </button>
+    </form>
+
+    <div id="resultArea" class="bg-white rounded-xl shadow p-6 hidden">
+      <h2 class="text-xl font-semibold mb-2">Result</h2>
+      <div id="searchResult" class="text-gray-700 whitespace-pre-wrap"></div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('searchForm');
+    const resultArea = document.getElementById('resultArea');
+    const searchResult = document.getElementById('searchResult');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const query = document.getElementById('queryInput').value;
+
+      searchResult.textContent = `result: ${query}`;
+      resultArea.classList.remove('hidden');
+    });
+  </script>
+  
+</body>
+</html>
