@@ -25,9 +25,17 @@ A semantic search engine with LLM integration using Elasticsearch and Hugging Fa
    echo "HF_MODEL=mistralai/Mistral-7B-Instruct-v0.3" >> .env
    ```
 
-3. Build and run the application:
-   COMING SOON! (Rencana make docker)
+3. Build and run the application: <br>
+    elasticsearch is on my private server, so I can't deploy it here.
+    but you can run it locally or on your own elasticsearch server
+    then use 
+    ```
+    python manage.py runserver
+    ```
+    after you indexed the data!
 
+    rencana make docker soon, untuk deployment full
+    
 4. Access the application at http://localhost:8001
 
 ### Indexing Data
