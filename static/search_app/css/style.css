@@ -1,0 +1,145 @@
+/* Main body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.search-header {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 272px;
+    height: auto;
+}
+
+.search-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+}
+
+.blue-text {
+    color: #1a3ba0; /* Dark blue */
+}
+
+.red-text {
+    color: #db4437; /* Google red */
+}
+
+.search-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Search form styles */
+.search-form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 16px 24px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #3b78e7;
+}
+
+/* Results section styles */
+.results {
+    margin-top: 30px;
+    display: none;
+}
+
+.result-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.result-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1a0dab;
+}
+
+.result-text {
+    font-size: 14px;
+    color: #4d5156;
+}
+
+.result-highlight {
+    color: #000;
+    font-weight: normal;
+}
+
+/* Enhanced section styles */
+.enhanced-section {
+    margin-top: 30px;
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #4285f4;
+    display: none;
+}
+
+.enhanced-title {
+    color: #4285f4;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Loading and error message styles */
+.loading {
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.errors {
+    background-color: #fff0f0;
+    color: #c00;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+} 
